@@ -11,5 +11,5 @@ import untitled.domain.*;
 )
 public interface DepartmentRepository
     extends PagingAndSortingRepository<Department, Long> {
-    List<Department> findByName();
+    List<Department> findByName(String name);
 }

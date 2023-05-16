@@ -17,7 +17,7 @@ public class Employee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    private String userid;
+    private String userId;
 
     @Embedded
     private RankId rankId;
@@ -27,6 +27,9 @@ public class Employee {
 
     @ElementCollection
     private List<EmployeeUser> employeeUser;
+
+    @Embedded
+    private EmployeeUser employeeUser;
 
     @PostPersist
     public void onPostPersist() {

@@ -20,6 +20,6 @@ public class DepartmentController {
 
     @PutMapping("/departments/search/findByName")
     public Object findByName(@RequestBody DepartmentCQuery query) {
-        return departmentRepository.findByName();
+        return departmentRepository.findByName(query.getName());
     }
 }

@@ -7,5 +7,5 @@ import untitled.domain.*;
 
 @RepositoryRestResource(collectionResourceRel = "ranks", path = "ranks")
 public interface RankRepository extends PagingAndSortingRepository<Rank, Long> {
-    List<Rank> findByName();
+    List<Rank> findByName(String name);
 }

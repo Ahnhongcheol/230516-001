@@ -20,6 +20,6 @@ public class RankController {
 
     @PutMapping("/ranks/search/findByName")
     public Object findByName(@RequestBody RankviewQuery query) {
-        return rankRepository.findByName();
+        return rankRepository.findByName(query.getName());
     }
 }

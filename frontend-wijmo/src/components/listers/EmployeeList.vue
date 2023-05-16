@@ -14,13 +14,15 @@
                             
                             
                             
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
                             [ Id :  {{data.id }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ Userid :  {{data.userid }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ UserId :  {{data.userId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ RankId :  {{data.rankId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ DepartmentId :  {{data.departmentId }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ EmployeeUser :  {{data.employeeUser }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ EmployeeUser :  {{data.employeeUser }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
@@ -103,10 +105,11 @@
             this.values = temp.data._embedded.employees;
             
             this.newValue = {
-                'userid': '',
+                'userId': '',
                 'rankId': {},
                 'departmentId': {},
                 'employeeUser': [],
+                'employeeUser': {},
             }
         },
         methods: {

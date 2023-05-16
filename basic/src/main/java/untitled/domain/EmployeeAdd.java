@@ -10,7 +10,7 @@ import untitled.infra.AbstractEvent;
 public class EmployeeAdd extends AbstractEvent {
 
     private Long id;
-    private String userid;
+    private String userId;
     private RankId rankId;
     private DepartmentId departmentId;
     private List<EmployeeUser> employeeUser;

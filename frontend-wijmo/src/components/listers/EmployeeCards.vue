@@ -77,10 +77,11 @@
                 me.values = temp.data._embedded.employees;
                 
                 me.newValue = {
-                    'userid': '',
+                    'userId': '',
                     'rankId': {},
                     'departmentId': {},
                     'employeeUser': [],
+                    'employeeUser': {},
                 }
             },
 
